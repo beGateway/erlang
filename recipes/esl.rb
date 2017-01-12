@@ -24,7 +24,7 @@ when 'debian'
   package 'apt-transport-https'
 
   apt_repository 'erlang_solutions_repo' do
-    uri 'https://packages.erlang-solutions.com/debian/'
+    uri 'http://packages.erlang-solutions.com/debian/'
     distribution node['erlang']['esl']['lsb_codename']
     components ['contrib']
     #key was grabbed from 'https://packages.erlang-solutions.com/debian/erlang_solutions.asc'
